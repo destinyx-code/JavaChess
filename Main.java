@@ -118,6 +118,42 @@ public class Main {
 		if (rank = '5') y = 5;
 		if (rank = '6') y = 6;
 		if (rank = '7') y = 7;
+		if (rank = "8") y = 8;
 
+		if (x == -1 || y == -1) {
+			return null;
+		}
+		else {
+			return new Pos(x, y);
+		}
+
+	public static String convertPosToSquare(Pos p) {
+
+		String file = "";
+
+		if (p.x == 0) file = "a";
+		if (p.x == 1) file = "b";
+		if (p.x == 2) file = "c";
+		if (p.x == 3) file = "d";
+		if (p.x == 4) file = "e";
+		if (p.x == 5) file = "f";
+		if (p.x == 6) file = "g";
+		if (p.x == 7) file = "h";
+
+		return file + (p.y + 1);
+		}
+
+	public static Pos calculateNewPos(Pos p, int x, int y) {
+
+		if (p.x + x < 0)
+			return null;
+		if (p.x + x > 7)
+			return null;
+		if (p.y + y < 0)
+			return null;
+		if (p.y + y > 7)
+			return null;
+		
+	}
 	}
 }
