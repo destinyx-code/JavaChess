@@ -1,3 +1,7 @@
+/* Chess! 
+by Ryder Stanley
+written in java */
+
 // scanner library import
 import java.util.Scanner;
 // start of the file
