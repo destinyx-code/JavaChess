@@ -186,6 +186,24 @@ public class Main {
 			System.out.println();
 		}
 	}
-	
-	}
+	public static void boolean getYorN(String prompt) {
+		
+		while(true) {
+			String answer;
+			System.out.println("\n" + prompt + " (Y or N) ");
+			answer = sc.nextLine();
+			
+			if (answer.equalsIgnoreCase("Y"))
+				return true;
+			else if (answer.equalsIgnoreCase("N"))
+				return false;
+		}
+	}	
 }
+
+	class Pos {
+		public int x;
+		public int y;
+
+	}
+
