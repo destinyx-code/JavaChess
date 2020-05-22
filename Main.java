@@ -10,7 +10,7 @@ public class Main {
 	// creates a scanner object
 	static Scanner sc = new Scanner(System.in);
 
-	// all possibke moves
+	// all possible moves
 	static int[][] moves = { {-2, +1},
 			       {-1, +2},
 			       {+1, +2},
@@ -46,7 +46,7 @@ public class Main {
 
 		// prints to ask for the knights positon
 		do {
-			System.out.print("Enter knight's position: ");
+					System.out.print("Enter knight's position: ");
 			// if an input has been entered it generates a new line to show the grid
 			kSquare = sc.nextLine();
 
@@ -99,7 +99,7 @@ public class Main {
 		char rank, file;
 
 		// creates the file square char
-		file = square.char.At(0);
+		file = square.At(0);
 
 		// a is 0, b is 1, c is 2... so on
 		if (file == 'a') x = 0;
@@ -112,7 +112,7 @@ public class Main {
 		if (file == 'h') x = 7;
 
 		// creates the rank square char
-		rank = square.char.At(1);
+		rank = square.At(1);
 
 		// the rank is 1, y is 1, the rank is 2, the y is 2, so on
 		if (rank = '1') y = 1;
@@ -132,9 +132,9 @@ public class Main {
 		else {
 			return new Pos(x, y);
 		}
-
+		
 	// here we declare the value of the cpts function
-	public static String convertPosToSquare(Pos p) {
+		public static String convertPosToSquare(Pos p) {
 
 		// the file starts blank
 		String file = "";
@@ -142,7 +142,7 @@ public class Main {
 		// we use the same ranking loop but with x positions
 		if (p.x == 0) file = "a";
 		if (p.x == 1) file = "b";
-		if (p.x == 2) file = "c";
+		if (p.x == 2) file = "c";	
 		if (p.x == 3) file = "d";
 		if (p.x == 4) file = "e";
 		if (p.x == 5) file = "f";
@@ -186,7 +186,7 @@ public class Main {
 			System.out.println();
 		}
 	}
-	public static void boolean getYorN(String prompt) {
+	public static boolean getYorN(String prompt) {
 		
 		while(true) {
 			String answer;
@@ -199,7 +199,7 @@ public class Main {
 				return false;
 		}
 	}	
-}
+	
 
 	class Pos {
 		public int x;
@@ -209,5 +209,5 @@ public class Main {
 		this.x = x;
 		this.y = y;
 		}
-	}
-
+	}	
+	}	
