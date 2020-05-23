@@ -167,13 +167,17 @@ public class Main {
 			return null;
 	return new Pos(p.x + x, p.y + y);
 		}
-
+	
+	// the value of the printboard function
 	public static void printBoard(int[][] b) {
-
+		
+		// enters a calculation loop for the users move
 		for (int y =7; y >= 0; y--) {
-
+			
+			// adds upon previous calculation loop
 			for (int x = 0; x < 8; x++) {
-
+				
+				// displays the result of the loop
 				if (b[x][y] == 1)
 					System.out.println(" X ");
 				else if (b[x][y] == 2)
@@ -183,11 +187,15 @@ public class Main {
 				}
 			}
 
+			// prints the display
 			System.out.println();
 		}
+	
 	}
+	// the value of the getYorN function
 	public static boolean getYorN(String prompt) {
 		
+		// enters a basic game loop
 		while(true) {
 			String answer;
 			System.out.println("\n" + prompt + " (Y or N) ");
@@ -201,6 +209,7 @@ public class Main {
 	}	
 	
 
+	// final location display
 	class Pos {
 		public int x;
 		public int y;
